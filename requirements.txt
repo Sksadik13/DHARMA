@@ -1,0 +1,10 @@
+# Person 1 -- Object Detection & Tracking module dependencies
+# (versions confirmed working together as of Sep 2026; loosen if the
+# rest of the Dharma team is already pinned to something specific)
+
+ultralytics>=8.4.0     # YOLO11n + built-in ByteTrack integration
+torch>=2.10            # backend for ultralytics (CPU or CUDA build both fine)
+torchvision>=0.28
+opencv-python>=4.13    # video I/O, frame handling
+numpy>=2.0
+lapx>=0.9               # linear assignment solver required by ByteTrack
